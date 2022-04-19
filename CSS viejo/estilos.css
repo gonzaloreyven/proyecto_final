@@ -1,6 +1,6 @@
-#seleccion{
+#seleccion {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     margin: auto;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.685);
@@ -9,15 +9,23 @@
     justify-content: center;
 }
 
-.contenedor{
+.contenedor {
     width: 70%;
     margin: auto;
-    
+
 }
 
+.mb-4,
+.my-4 {
+    margin-bottom: 1.5rem !important;
+}
 
+.mb-5,
+.my-5 {
+    margin-bottom: 3rem !important;
+}
 
-h6{
+h6 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgba(255, 255, 255, 0.61);
     background-color: rgba(0, 0, 0, 0.39);
@@ -30,37 +38,38 @@ h6{
 }
 
 
-.fotos_columna{
+.fotos_columna {
     margin: 5px;
 }
 
-.fotos .contenedor{
+.fotos .contenedor {
     display: grid;
-    
+
 }
-@media(min-width:600px){
-    .contenedor{
-        
-        grid-template-columns: repeat(3,33.3%) ;
+
+@media(min-width:600px) {
+    .contenedor {
+
+        grid-template-columns: repeat(3, 33.3%);
     }
 }
 
 
-aside{
+aside {
     display: grid;
     padding: 60px;
 }
 
-p{
-    font-size: 22px ;
-    line-height: 23px ;
+p {
+    font-size: 22px;
+    line-height: 23px;
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
-fieldset{  
-    background-image:url(../Imagenes/AK47.jpg) ;
+fieldset {
+    background-image: url(../Imagenes/AK47.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -76,15 +85,17 @@ fieldset{
     height: auto;
 }
 
-.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active,
-.show > .btn-outline-secondary.dropdown-toggle {
+.btn-outline-secondary:not(:disabled):not(.disabled):active,
+.btn-outline-secondary:not(:disabled):not(.disabled).active,
+.show>.btn-outline-secondary.dropdown-toggle {
     color: #fff;
     background-color: #6c757d;
     border-color: #6c757d;
 }
 
-.btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
-.show > .btn-outline-secondary.dropdown-toggle:focus {
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline-secondary.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
 
@@ -96,26 +107,28 @@ fieldset{
         flex-flow: row nowrap;
         -webkit-box-pack: start;
         -ms-flex-pack: start;
-        justify-content:flex-end;
+        justify-content: flex-end;
     }
+
     .btn-dark {
         color: #fff;
         background-color: #343a40;
-      border-color: #343a40;
+        border-color: #343a40;
     }
-    
-    
-    
-    .Text-info{
-        font-size: 20px ;
-        line-height: 20px ;
+
+
+
+    .Text-info {
+        font-size: 20px;
+        line-height: 20px;
         color: rgb(7, 7, 7);
         background-color: rgba(255, 255, 255, 0.637);
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         padding: 30px 20px;
         width: 50%;
         margin: auto;
     }
+
     #arquero {
         filter: grayscale();
         transition: filter 0.4s ease-in-out;
@@ -135,96 +148,96 @@ fieldset{
     flex: 0 0 auto;
     width: auto;
     max-width: none;
-  }
-  
-  .col-1 {
+}
+
+.col-1 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 8.333333%;
     flex: 0 0 8.333333%;
     max-width: 8.333333%;
-  }
-  
-  .col-2 {
+}
+
+.col-2 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 16.666667%;
     flex: 0 0 16.666667%;
     max-width: 16.666667%;
-  }
-  
-  .col-3 {
+}
+
+.col-3 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
-  }
-  
-  .col-4 {
+}
+
+.col-4 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
-  }
-  
-  .col-5 {
+}
+
+.col-5 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 41.666667%;
     flex: 0 0 41.666667%;
     max-width: 41.666667%;
-  }
-  
-  .col-6 {
+}
+
+.col-6 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
-  }
-  
-  .col-7 {
+}
+
+.col-7 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 58.333333%;
     flex: 0 0 58.333333%;
     max-width: 58.333333%;
-  }
-  
-  .col-8 {
+}
+
+.col-8 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
-  }
-  
-  .col-9 {
+}
+
+.col-9 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
-  }
-  
-  .col-10 {
+}
+
+.col-10 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 83.333333%;
     flex: 0 0 83.333333%;
     max-width: 83.333333%;
-  }
-  
-  .col-11 {
+}
+
+.col-11 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 91.666667%;
     flex: 0 0 91.666667%;
     max-width: 91.666667%;
-  }
-  
-  .col-12 {
+}
+
+.col-12 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
-  }
+}
 
-  .imagen-tamaño{
-      width: 33%;
+.imagen-tamaño {
+    width: 33%;
 
-  }
+}
 
 .alinear_izq {
     text-align: left;
@@ -240,10 +253,10 @@ fieldset{
 
 .center {
     width: 100%;
-    display: inline-block;  
+    display: inline-block;
 }
 
-@media(min-width:500px){
+@media(min-width:500px) {
 
     .menu {
         background-color: rgba(255, 255, 255, 0.678);
@@ -251,65 +264,65 @@ fieldset{
         flex-direction: row;
         justify-content: center;
         width: auto;
-    margin: auto;
-    padding: 15px;
-    gap: 30px;
-    color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500px;
-    font-size: 20px;
-    text-align: center;
-    word-spacing: 60px;
-}
+        margin: auto;
+        padding: 15px;
+        gap: 30px;
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500px;
+        font-size: 20px;
+        text-align: center;
+        word-spacing: 60px;
+    }
 }
 
-a{
+a {
     color: black;
-    text-decoration:none
+    text-decoration: none
 }
 
 
 
 
 .menu li {
-    display: inline-table; 
+    display: inline-table;
     text-align: left;
 
 }
 
 
 
-.text{
-    font-size: 20px ;
-    line-height: 20px ;
+.text {
+    font-size: 20px;
+    line-height: 20px;
     color: rgb(7, 7, 7);
     background-color: rgba(255, 255, 255, 0.678);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-@media(min-width:500px){
-    
-    .Welcome{
+@media(min-width:500px) {
+
+    .Welcome {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 30px;
         color: rgb(0, 0, 0);
         text-align: center;
-        
+
     }
 }
-    
+
 
 .espacio {
     padding: 5px;
 }
 
-.first_line{
-    background-color: white ;
+.first_line {
+    background-color: white;
     padding: 20px;
-    border: 3px solid rgb(0, 0, 0); 
+    border: 3px solid rgb(0, 0, 0);
     margin: 30px;
 
-} 
+}
 
 .no_subrayado {
     text-decoration: none;
@@ -319,7 +332,7 @@ a{
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
-    
+
 }
 
 h2 {
@@ -333,7 +346,7 @@ h2 {
     color: rgb(255, 255, 255);
 }
 
-h3{
+h3 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 50px;
     font-style: italic;
@@ -343,16 +356,17 @@ h3{
     text-decoration: solid;
     color: rgb(255, 255, 255);
 }
+
 .nosotros_text {
-    font-size: 20px ;
-    line-height: 20px ;
+    font-size: 20px;
+    line-height: 20px;
     color: rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0.514);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
 }
 
-h5{
+h5 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     font-style: italic;
@@ -363,17 +377,41 @@ h5{
     color: rgb(255, 255, 255);
 }
 
+.body-index {
+    background-image: url(../Imagenes/talon-4k-moba-league-of-legends-warriors-besthqwallpapers.com-2048x1536.jpg);
+
+}
+
+.body-contacto {
+    background-image: url(../Imagenes/Imagen-contacto.jpg);
+}
+
+.body-info {
+background-image: url(../Imagenes/imagen-info.jpg);
+}
 
 body {
-    background-image:url(../Imagenes/talon-4k-moba-league-of-legends-warriors-besthqwallpapers.com-2048x1536.jpg) ;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-   min-height: 100vh;
+    min-height: 100vh;
 }
-footer{
+
+.body-nosotros{
+    background-image: url(../Imagenes/imagen-nosotros.jpg);
+}
+
+.body-torneo{
+    background-image: url(../Imagenes/Imagen-torneo.jpg);
+}
+
+.body-proximamente {
+    background-image:url(../Imagenes/Imagen-Proximamente.jpg)
+}
+
+footer {
     background-color: black;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -381,11 +419,12 @@ footer{
     text-align: center;
     padding: 15px;
     position: fixed;
-    bottom: 0px;    
+    bottom: 0px;
     width: 100%;
-   
+
 }
 
-*{margin: 0%;
-padding: 0%;
+* {
+    margin: 0%;
+    padding: 0%;
 }
