@@ -63,7 +63,7 @@ aside {
 p {
     font-size: 22px;
     line-height: 23px;
-    color: black;
+    color: rgb(0, 0, 0);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -281,7 +281,60 @@ a {
     text-decoration: none
 }
 
+.contencion {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
 
+.contencion figure {
+position: relative; 
+height: 600px;
+width: 800px;
+overflow: hidden;
+border-radius: 6px;
+box-shadow: 0px 15px 25px rgba(0,0,0.50);
+cursor: pointer;
+}
+
+.contencion figure img {
+width: 100%;
+height: 100%;
+transition: all 500ms ease-out;
+}
+
+.contencion figure .capa{
+position: absolute;
+top: 0;
+width: 100%;
+height: 100%;
+background: rgba(253, 253, 253, 0.6);
+transition: all 500ms ease-out;
+opacity: 0;
+visibility: hidden;
+text-align: center;
+
+}
+
+.contencion figure:hover > .capa{
+opacity: 1;
+visibility: visible;
+}
+
+.contencion figure:hover > .capa h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.contencion figure .capa h3{
+    color:rgb(0, 0, 0);
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
 
 
 .menu li {
