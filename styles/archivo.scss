@@ -12,7 +12,6 @@
 .contenedor {
     width: 70%;
     margin: auto;
-
 }
 
 .mb-4,
@@ -32,11 +31,9 @@ h6 {
     font-size: 20px;
 }
 
-
 #arquero:hover {
     filter: none;
 }
-
 
 .fotos_columna {
     margin: 5px;
@@ -44,16 +41,13 @@ h6 {
 
 .fotos .contenedor {
     display: grid;
-
 }
 
-@media(min-width:600px) {
+@media (min-width: 600px) {
     .contenedor {
-
         grid-template-columns: repeat(3, 33.3%);
     }
 }
-
 
 aside {
     display: grid;
@@ -67,9 +61,8 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
 fieldset {
-    background-image: url(../Imagenes/AK47.jpg);
+    background-image: url(../../Imagenes/AK47.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -85,16 +78,30 @@ fieldset {
     height: auto;
 }
 
-.btn-outline-secondary:not(:disabled):not(.disabled):active,
-.btn-outline-secondary:not(:disabled):not(.disabled).active,
+.btn-outline-secondary:not(:disabled):not(.disabled) {
+
+    &:active,
+    &.active {
+        color: #fff;
+        background-color: #6c757d;
+        border-color: #6c757d;
+    }
+}
+
 .show>.btn-outline-secondary.dropdown-toggle {
     color: #fff;
     background-color: #6c757d;
     border-color: #6c757d;
 }
 
-.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
-.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-secondary:not(:disabled):not(.disabled) {
+
+    &:active:focus,
+    &.active:focus {
+        box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+    }
+}
+
 .show>.btn-outline-secondary.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
@@ -116,8 +123,6 @@ fieldset {
         border-color: #343a40;
     }
 
-
-
     .Text-info {
         font-size: 20px;
         line-height: 20px;
@@ -130,7 +135,7 @@ fieldset {
     }
 
     #arquero {
-        filter: grayscale();
+        -webkit-filter: grayscale(100%);
         transition: filter 0.4s ease-in-out;
     }
 }
@@ -236,7 +241,6 @@ fieldset {
 
 .imagen-tamaño {
     width: 33%;
-
 }
 
 .alinear_izq {
@@ -256,8 +260,7 @@ fieldset {
     display: inline-block;
 }
 
-@media(min-width:500px) {
-
+@media (min-width: 500px) {
     .menu {
         background-color: rgba(255, 255, 255, 0.678);
         display: flex;
@@ -278,72 +281,67 @@ fieldset {
 
 a {
     color: black;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .contencion {
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    figure {
+        position: relative;
+        height: 600px;
+        width: 800px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+
+        img {
+            width: 100%;
+            height: 100%;
+            transition: all 500ms ease-out;
+        }
+
+        .capa {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(253, 253, 253, 0.6);
+            transition: all 500ms ease-out;
+            opacity: 0;
+            visibility: hidden;
+            text-align: center;
+        }
+
+        &:hover>.capa {
+            opacity: 1;
+            visibility: visible;
+
+            h3 {
+                margin-top: 70px;
+                margin-bottom: 15px;
+            }
+        }
+
+        .capa h3 {
+            color: rgb(0, 0, 0);
+            font-weight: 400;
+            margin-bottom: 120px;
+            transition: all 500ms ease-out;
+            margin-top: 30px;
+        }
+    }
 }
-
-.contencion figure {
-position: relative; 
-height: 600px;
-width: 800px;
-overflow: hidden;
-border-radius: 6px;
-box-shadow: 0px 15px 25px rgba(0,0,0.50);
-cursor: pointer;
-}
-
-.contencion figure img {
-width: 100%;
-height: 100%;
-transition: all 500ms ease-out;
-}
-
-.contencion figure .capa{
-position: absolute;
-top: 0;
-width: 100%;
-height: 100%;
-background: rgba(253, 253, 253, 0.6);
-transition: all 500ms ease-out;
-opacity: 0;
-visibility: hidden;
-text-align: center;
-
-}
-
-.contencion figure:hover > .capa{
-opacity: 1;
-visibility: visible;
-}
-
-.contencion figure:hover > .capa h3{
-    margin-top: 70px;
-    margin-bottom: 15px;
-}
-
-.contencion figure .capa h3{
-    color:rgb(0, 0, 0);
-    font-weight: 400;
-    margin-bottom: 120px;
-    transition: all 500ms ease-out;
-    margin-top: 30px;
-}
-
 
 .menu li {
     display: inline-table;
     text-align: left;
-
 }
-
-
 
 .text {
     font-size: 20px;
@@ -353,17 +351,14 @@ visibility: visible;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-@media(min-width:500px) {
-
+@media (min-width: 500px) {
     .Welcome {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 30px;
         color: rgb(0, 0, 0);
         text-align: center;
-
     }
 }
-
 
 .espacio {
     padding: 5px;
@@ -374,18 +369,14 @@ visibility: visible;
     padding: 20px;
     border: 3px solid rgb(0, 0, 0);
     margin: 30px;
-
 }
 
 .no_subrayado {
     text-decoration: none;
 }
 
-
-
 h1 {
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 h2 {
@@ -410,7 +401,7 @@ h3 {
     color: rgb(255, 255, 255);
 }
 
-.nosotros_text {
+.maradona .nosotros_text {
     font-size: 20px;
     line-height: 20px;
     color: rgb(0, 0, 0);
@@ -431,16 +422,15 @@ h5 {
 }
 
 .body-index {
-    background-image: url(../Imagenes/talon-4k-moba-league-of-legends-warriors-besthqwallpapers.com-2048x1536.jpg);
-
+    background-image: url(../../Imagenes/talon-4k-moba-league-of-legends-warriors-besthqwallpapers.com-2048x1536.jpg);
 }
 
 .body-contacto {
-    background-image: url(../Imagenes/Imagen-contacto.jpg);
+    background-image: url(../../Imagenes/Imagen-contacto.jpg);
 }
 
 .body-info {
-background-image: url(../Imagenes/imagen-info.jpg);
+    background-image: url(../../Imagenes/imagen-info.jpg);
 }
 
 body {
@@ -452,16 +442,16 @@ body {
     min-height: 100vh;
 }
 
-.body-nosotros{
-    background-image: url(../Imagenes/imagen-nosotros.jpg);
+.body-nosotros {
+    background-image: url(../../Imagenes/imagen-nosotros.jpg);
 }
 
-.body-torneo{
-    background-image: url(../Imagenes/Imagen-torneo.jpg);
+.body-torneo {
+    background-image: url(../../Imagenes/Imagen-torneo.jpg);
 }
 
 .body-proximamente {
-    background-image:url(../Imagenes/Imagen-Proximamente.jpg)
+    background-image: url(../../Imagenes/Imagen-Proximamente.jpg);
 }
 
 footer {
@@ -474,7 +464,6 @@ footer {
     position: fixed;
     bottom: 0px;
     width: 100%;
-
 }
 
 * {
