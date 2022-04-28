@@ -1,5 +1,5 @@
-$box-color: grey;
-
+$box-color: rgba(255, 255, 255, 0.632);
+$title-color: white;
 
 #seleccion {
     display: flex;
@@ -235,10 +235,10 @@ fieldset {
     display: inline-block;
 }
 
-@media (min-width: 500px) {
+
     .menu {
-        background-color: $box-color
-        display flex;
+        background-color: $box-color;
+        display: flex;
         flex-direction: row;
         justify-content: center;
         width: auto;
@@ -252,7 +252,6 @@ fieldset {
         text-align: center;
         word-spacing: 60px;
     }
-}
 
 
 a {
@@ -352,7 +351,10 @@ a {
 }
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    color: $title-color;
+    text-align: center;
+    font-size: 60px;
 }
 
 h2 {
