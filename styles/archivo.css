@@ -36,7 +36,7 @@
 
 h6 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: rgba(255, 255, 255, 0.61);
+  color: grey;
   background-color: rgba(0, 0, 0, 0.39);
   font-size: 20px;
 }
@@ -57,10 +57,12 @@ h6 {
 
 @media (min-width: 600px) {
   .contenedor {
-    -ms-grid-columns: (33.3%)[3];
-        grid-template-columns: repeat(3, 33.3%);
-  }
-}
+    -ms-grid-columns: (33.3%) [3];
+        grid-template-columns:repeat (3,33.3%);
+
+      }
+
+    }
 
 aside {
   display: -ms-grid;
@@ -90,31 +92,7 @@ fieldset {
 .img-fluid {
   max-width: 100%;
   height: auto;
-}
-
-.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active {
-  color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
-}
-
-.show > .btn-outline-secondary.dropdown-toggle {
-  color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
-}
-
-.btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
-}
-
-.show > .btn-outline-secondary.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
-}
-
-@media (min-width: 576px) {
+}@media (min-width: 576px) {
   .navbar-expand {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -270,10 +248,7 @@ fieldset {
 
 @media (min-width: 500px) {
   .menu {
-    background-color: rgba(255, 255, 255, 0.678);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    background-color: grey display flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -285,7 +260,7 @@ fieldset {
     margin: auto;
     padding: 15px;
     gap: 30px;
-    color: white;
+    color: grey;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500px;
     font-size: 20px;
@@ -368,9 +343,7 @@ a {
   text-align: left;
 }
 
-@media (min-width: 500px) {
-section
-}
+
 
 .text {
   font-size: 20px;
@@ -405,14 +378,7 @@ section
 }
 
 h1 {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 50px;
-  font-style: italic;
-  font-weight: 100;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: solid;
-  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
@@ -472,15 +438,15 @@ h5 {
   background-image: url(../../Imagenes/imagen-info.jpg);
 }
 
-@media (min-width: 500px) {
+
 body {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
-    min-height: 100vh;
-  }
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+
 }
 
 .body-nosotros {
