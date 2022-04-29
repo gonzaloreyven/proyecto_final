@@ -1,5 +1,25 @@
-$box-color: rgba(255, 255, 255, 0.632);
+$box-color: rgba(0, 0, 0, 0.632);
 $title-color: white;
+
+@mixin tres-columnas ($g, $r) {
+    -webkit-box-flex: 0;
+    -ms-flex: $g;
+    flex: $g;
+    max-width: $r;
+    
+}
+
+.efecto-imagen{
+    @extend .contencion;
+}
+
+.col-4 {
+@include tres-columnas( 0 0 33.333333%, 33.333333%)
+}
+
+&--big {
+    @include tres-columnas( 0 0 66.666667%, 66.666667%)
+}
 
 #seleccion {
     display: flex;
@@ -103,7 +123,7 @@ fieldset {
         line-height: 20px;
         color: rgb(7, 7, 7);
         background-color: rgba(255, 255, 255, 0.637);
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
         padding: 30px 20px;
         width: 50%;
         margin: auto;
@@ -151,12 +171,6 @@ fieldset {
     max-width: 25%;
 }
 
-.col-4 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-}
 
 .col-5 {
     -webkit-box-flex: 0;
@@ -255,8 +269,16 @@ fieldset {
 
 
 a {
-    color: black;
-    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+}
+
+h4{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 50px;
+    text-decoration:wavy;
+    margin-left: 30px;
 }
 
 .contencion {
@@ -351,7 +373,7 @@ a {
 }
 
 h1 {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    font-family:Impact, "Haettenschweiler", 'Arial Narrow Bold', sans-serif;
     color: $title-color;
     text-align: center;
     font-size: 60px;
@@ -369,11 +391,11 @@ h2 {
 }
 
 h3 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
     font-size: 50px;
     font-style: italic;
     font-weight: 100;
-    text-align: center;
+    
     text-transform: uppercase;
     text-decoration: solid;
     color: rgb(255, 255, 255);
@@ -384,12 +406,12 @@ h3 {
     line-height: 20px;
     color: rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0.514);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
     font-style: italic;
 }
 
 h5 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
     font-size: 20px;
     font-style: italic;
     font-weight: 100;
@@ -430,6 +452,10 @@ body {
 
 .body-proximamente {
     background-image: url(../../Imagenes/Imagen-Proximamente.jpg);
+}
+
+.body-ayuda {
+    background-image: url(../Imagenes/Imagen-ayuda.jpg);
 }
 
 footer {
