@@ -250,6 +250,7 @@ fieldset {
   display: inline-block;
 }
 
+
 .menu {
   background-color: rgba(0, 0, 0, 0.632);
   display: -webkit-box;
@@ -350,11 +351,6 @@ h4 {
   -webkit-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
   margin-top: 30px;
-}
-
-.menu li {
-  display: inline-table;
-  text-align: left;
 }
 
 .text {
