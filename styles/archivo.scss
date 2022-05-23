@@ -1,4 +1,4 @@
-$box-color: rgba(0, 0, 0, 0.632);
+$box-color: rgba(0, 0, 0, 0.611);
 $title-color: rgba(255, 255, 255, 0.763);
 
 .Separar-footer {
@@ -62,7 +62,7 @@ p {
     font-size: 22px;
     line-height: 23px;
     color: rgb(0, 0, 0);
-    font-family: Impact, "Haettenschweiler", 'Arial Narrow Bold', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 fieldset {
@@ -77,7 +77,7 @@ fieldset {
     text-align: center;
 }
 
-@media (min-width: 300px) {
+@media (min-width: 576px) {
     .navbar-expand {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -115,11 +115,17 @@ fieldset {
     width: 33%;
 }
 
+.alinear_izq {
+    text-align: left;
+}
 
 .alinear_centro {
     text-align: center;
 }
 
+.alinear_der {
+    text-align: right;
+}
 
 .center {
     width: 100%;
@@ -127,7 +133,7 @@ fieldset {
 }
 
 
-@media (min-width: 300px) {
+
 
     .menu {
         background-color: $box-color;
@@ -143,28 +149,8 @@ fieldset {
         font-weight: 500px;
         font-size: 20px;
         text-align: center;
-        word-spacing: 70px;
+        word-spacing: 60px;
     }
-}
-@media (min-width: 1200px) {
-
-    .menu {
-        background-color: $box-color;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: auto;
-        margin: auto;
-        padding: 15px;
-        gap: 30px;
-        color: $box-color;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 500px;
-        font-size: 20px;
-        text-align: center;
-        word-spacing: 70px;
-    }
-}
 
 
 a {
@@ -234,6 +220,10 @@ h4 {
     }
 }
 
+.menu li {
+    display: inline-table;
+    text-align: left;
+}
 
 .text {
     font-size: 20px;
@@ -312,18 +302,32 @@ h5 {
     color: rgb(255, 255, 255);
 }
 
+@media (min-width: 1200px) {
 .body-index {
     background-image: url(../../Imagenes/talon-4k-moba-league-of-legends-warriors-besthqwallpapers.com-2048x1536.jpg);
 }
-
+@media (min-width: 1200px) {
 .body-contacto {
     background-image: url(../../Imagenes/Imagen-contacto.jpg);
 }
-
+@media (min-width: 1200px) {
 .body-info {
     background-image: url(../../Imagenes/imagen-info.jpg);
 }
 
+@media (min-width: 300px) {
+    .body-index {
+        background-image: url(../../Imagenes/talon-4k-moba-league-of-legends-warriors-besthqwallpapers.com-2048x1536.jpg);
+    }
+    @media (min-width: 300px) {
+    .body-contacto {
+        background-image: url(../../Imagenes/Imagen-contacto.jpg);
+    }
+    @media (min-width: 300px) {
+    .body-info {
+        background-image: url(../../Imagenes/imagen-info.jpg);
+    }
+    
 @media (min-width: 300px) {
 
     header {
@@ -334,13 +338,12 @@ h5 {
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
         flex-direction: row;
-        background-color: #100d0e;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-        justify-content: space-between;
+        justify-content: center;
         padding: 1.5rem;
     }
 }
@@ -367,21 +370,52 @@ h5 {
     }
 }
 
+@media (min-width: 300px) {}
 .body-nosotros {
     background-image: url(../../Imagenes/imagen-nosotros.jpg);
 }
+@media (min-width: 300px) {
 
-.body-torneo {
-    background-image: url(../../Imagenes/Imagen-torneo.jpg);
+    .body-torneo {
+        background-image: url(../../Imagenes/Imagen-torneo.jpg);
+    }
+}
+@media (min-width: 300px){
+
+    .body-proximamente {
+        background-image: url(../../Imagenes/Imagen-Proximamente.jpg);
+    } 
+}
+@media (min-width: 300px) {
+
+    .body-ayuda {
+        background-image: url(../Imagenes/Imagen-ayuda.jpg);
+    }
 }
 
-.body-proximamente {
-    background-image: url(../../Imagenes/Imagen-Proximamente.jpg);
+@media (min-width: 1200px) {}
+.body-nosotros {
+    background-image: url(../../Imagenes/imagen-nosotros.jpg);
+}
+@media (min-width: 1200px) {
+
+    .body-torneo {
+        background-image: url(../../Imagenes/Imagen-torneo.jpg);
+    }
+}
+@media (min-width: 1200px){
+
+    .body-proximamente {
+        background-image: url(../../Imagenes/Imagen-Proximamente.jpg);
+    } 
+}
+@media (min-width: 1200px) {
+
+    .body-ayuda {
+        background-image: url(../Imagenes/Imagen-ayuda.jpg);
+    }
 }
 
-.body-ayuda {
-    background-image: url(../Imagenes/Imagen-ayuda.jpg);
-}
 
 footer {
     background-color: black;
